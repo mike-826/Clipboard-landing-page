@@ -1,0 +1,303 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5rem;
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    text-align: center;
+    background-image: url(../images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+}
+
+.row {
+    display: flex;
+}
+
+.content {
+    margin: 10%;
+    margin-top: 7.5rem;
+}
+
+.container {
+    margin-top: 8rem;
+}
+
+header img {
+    margin-bottom: 4rem;
+}
+
+h1, h2, h3 {
+    line-height: 2.5rem;
+    color: hsl(210, 10%, 33%);
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    color: hsl(201, 11%, 66%);
+}
+
+header p {
+    margin-top: 1.5rem;
+}
+
+.btns {
+    margin-top: 2.5rem;
+}
+
+button {
+    width: 300px;
+    margin: 0 0.5rem 1.5rem 0.5rem;
+    border: none;
+    border-radius: 25px;
+    height: 3rem;
+    color: white;
+    font-size: 18px;
+    box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.50);
+    -webkit-box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.50);
+    -moz-box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.50);
+}
+
+.cyan {
+    background-color: hsl(171, 66%, 44%);
+    transition: background 0.1s ease-in-out;
+}
+
+.blue {
+    background-color: hsl(233, 100%, 69%);
+    transition: background 0.1s ease-in-out;
+}
+
+.cyan:hover {
+    background-color: rgb(78, 205, 187);
+    cursor: pointer;
+}
+
+.blue:hover {
+    background-color: rgb(125, 153, 251);
+    cursor: pointer;
+}
+
+.section-head p {
+    margin-top: 1.25rem;
+}
+
+.computer-img {
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    max-width: 100%;
+    height: auto;
+}
+
+.section-container {
+    margin-top: 1rem;
+}
+
+.devices-img {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    max-width: 100%;
+    height: auto;
+
+}
+
+.supercharge-wf {
+    margin-bottom: 3rem;
+}
+
+.icon-img {
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.section-container p {
+    margin-top: 1rem;
+}
+
+.logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logos img {
+    margin-bottom: 4rem;
+    max-width: 150px;
+}
+
+.big-logo {
+    width: 40%;
+}
+
+.small-logo {
+    width: 35%;
+}
+
+footer {
+    background-color: rgb(244, 246, 248);
+}
+
+footer img {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    width: 3.5rem;
+}
+
+footer li {
+    margin-top: 1.5rem;
+    color: hsl(210, 10%, 33%);
+    list-style: none;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+
+.icon {
+    width: 1.5rem;
+}
+
+.fab {
+    color: hsl(210, 10%, 33%);
+    font-size: 30px;
+}
+
+a:hover {
+    color: hsl(171, 66%, 44%);
+    cursor: pointer;
+}
+
+.fab:hover {
+    color: hsl(171, 66%, 44%);
+}
+
+
+@media(min-width: 800px) {
+    body {
+        background-image: url(../images/bg-header-desktop.png);
+    }
+
+    .section-head {
+        margin: 0 10%;
+    }
+    
+    .btns {
+        display: flex;
+        justify-content: center;
+    }
+
+    button {
+        width: 250px;
+        margin: 0 0.5rem;
+    }
+
+    .snippets {
+        display: flex;
+        align-items: center;
+    }
+
+    .left {
+        width: 50%;
+        position: relative;
+        right: 15%;
+        width: 100%;
+    }
+
+    .right {
+        width: 50%;
+        text-align: start;
+        position: relative;
+        right: 5%;
+    }
+
+    .right p {
+        margin-top: 0.25rem;
+    }
+
+    .supercharge-wf p {
+        margin-bottom: 4rem;
+    }
+
+    .section-list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .section-list .section-container {
+        width: 30%;
+    }
+
+    .section-container:first-child {
+        margin-bottom: 1.4rem;
+    }
+
+    .logos {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logos img {
+        margin: 0 1.5rem;
+    }
+
+    .foot-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        margin-bottom: 0;
+        text-align: start;
+    }
+
+    footer img {
+        margin: 0;
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .foot-container ul {
+        display: flex;
+        flex-flow: column wrap;
+        margin: 0 2rem;
+        width: 60%;
+        height: 90%;
+        flex-basis: auto;
+        padding-top: 1%;
+    }
+
+    footer li {
+        margin-top: 0.5rem;
+    }
+
+    .icons {
+        flex-basis: 20%;
+        margin: 0;
+    }
+
+    .icon {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+}
+
+@media(min-width: 1150px) {
+    .right {
+        bottom: 50px;
+    }
+}
